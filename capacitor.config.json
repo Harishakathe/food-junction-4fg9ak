@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "food-junction",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,8 @@
+{
+  "name": "food-junction",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "0df6883e"
+}
