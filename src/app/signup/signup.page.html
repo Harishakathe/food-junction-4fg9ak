@@ -1,10 +1,31 @@
-<ion-header>
-  <ion-toolbar color="mango">
-    <ion-title>Registration</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="heading">
+    <h1>Sign Up</h1>
+    <p>Please Sign to enter into app.</p>
+  </div>
+  <div class="email-login">
+    <div class="formfield">
+      <input type="text" name="email" id="email">
+      <label for="email" placeholder="Email">Email</label>
+    </div>
+    <div class="formfield">
+      <input type="password" name="password" id="password">
+      <label for="password" placeholder="Password">Password</label>
+    </div>
+    <div class="other-links">
+      <div class="remember-me">
+        <ion-checkbox></ion-checkbox>
+        <p>I agree with privacy policy me</p>
+      </div>
+    </div>
+  </div>
+  <div class="login-button">
+    <ion-button class="login" routerLink="/thank-you">Sign up</ion-button>
+    <p>Already have an account?<span routerLink="/login">Login</span></p>
+  </div>
 
-<ion-content padding='true'>
+
+  <!-- <ion-content padding='true'>
   <div class="center">
     <img src="assets/images/logo.png" class="smallLogo" />
     <h1>Create Account</h1>
@@ -31,4 +52,4 @@
     </ion-list>
     <ion-button expand="block" share="round" color="success" (click)="signupAction()">Registration</ion-button>
   </form>
-</ion-content>
+</ion-content> -->

@@ -4,6 +4,7 @@ import { AuthConstants } from '../config/auth-constants';
 import { AuthService } from '../services/auth.service';
 import { StorageService } from '../services/storage.service';
 import { ToastService } from '../services/toast.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,19 +12,23 @@ import { ToastService } from '../services/toast.service';
   styleUrls: ['./login.page.scss']
 })
 export class LoginPage implements OnInit {
+
   postData = {
     username: '',
     password: ''
   };
 
   constructor(
+    public formBuilder: FormBuilder,
     private router: Router,
     private authService: AuthService,
     private storageService: StorageService,
     private toastService: ToastService
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+
+  }
 
   validateInputs() {
     console.log(this.postData);

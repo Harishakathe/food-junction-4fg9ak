@@ -8,7 +8,7 @@ import { ToastService } from '../services/toast.service';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
-  styleUrls: ['./signup.page.scss']
+  styleUrls: ['./signup.page.scss', '../login/login.page.scss']
 })
 export class SignupPage implements OnInit {
   postData = {
